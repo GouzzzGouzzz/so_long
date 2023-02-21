@@ -6,7 +6,7 @@
 /*   By: nmorandi <nmorandi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 16:10:16 by nmorandi          #+#    #+#             */
-/*   Updated: 2023/02/07 16:11:27 by nmorandi         ###   ########.fr       */
+/*   Updated: 2023/02/21 15:33:06 by nmorandi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,6 +103,9 @@ int	check_all(t_map *arr)
 		return (-1);
 	}
 	if (arr->lenght < arr->height)
+	{
+		clear_map(arr);
 		return (print_error(2));
+	}
 	return (0);
 }
